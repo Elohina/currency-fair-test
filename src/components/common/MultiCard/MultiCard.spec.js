@@ -1,7 +1,7 @@
 import React from "react";
 import { mount } from "enzyme";
 
-import Multicard from "./MultiCard";
+import MultiCard from "./MultiCard";
 
 describe('<MultiCard>', () => {
     it('Should output a card with body data', () => {
