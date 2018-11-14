@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'PostGrotesk-Medium';
+  src: local('PostGrotesk-Medium'), url(./assets/fonts/PostGrotesk-Medium.woff) format('woff');
+}
+@font-face {
+  font-family: 'PostGrotesk-Light';
+  src: local('PostGrotesk-Light'), url(./assets/fonts/PostGrotesk-Light.woff) format('woff');
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: PostGrotesk-Light;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
