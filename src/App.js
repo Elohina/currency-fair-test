@@ -3,6 +3,7 @@ import './App.css';
 import logo from'./assets/logo.svg';
 import Navbar from './components/common/Navbar/Navbar';
 import Transaction from './components/transaction/Transaction';
+import TransactionDetail from "./components/transaction-detail/TransactionDetail";
 
 
 class App extends Component {
@@ -14,9 +15,10 @@ class App extends Component {
               <img src={logo} alt="" className="nav-logo"></img>
             </div>
         </Navbar>
-        <Transaction />
-        <header className="App-header">
-        </header>
+        <div className="wrapper wrapper-flex">
+              <Transaction />
+              <TransactionDetail />
+        </div>
       </div>
     );
   }

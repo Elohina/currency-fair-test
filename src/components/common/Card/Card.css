@@ -1,0 +1,16 @@
+.card-container {
+    width: 450px;
+    padding: 55px 40px;
+}
+
+.card-header, .card-footer, .card-body {
+    padding: 2px 25px;
+    border: 1px solid #E0E0E0;
+}
+.card-header, .card-footer {
+    background-color: #FAFAFA;
+}
+
+.card-body {
+    background-color: #FFFFFF;
+}

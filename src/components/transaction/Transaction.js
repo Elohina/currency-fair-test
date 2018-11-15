@@ -29,19 +29,17 @@ class Transaction extends React.Component {
         const amount = 2000.00;
         const currency = {name: 'EUR', img: EUR_IMG};
         return(
-            <div className="wrapper">
-                <Tabs items={tabs_list} >
-                    <Tab id="stepOne">
-                        <h3>Let’s set up your transaction!</h3>
-                        <h4>Specify the amount to be sent or received.</h4>
-                        <Amount title="YOU SEND" amount={amount} currency={currency}/>
-                        <Amount title="RECEIVER GETS" amount={amount} currency={currency}/>
-                        <div className="next-container">
-                            <button type="button" className="button-next">Next</button>
-                        </div>
-                    </Tab>
-                </Tabs>
-            </div>
+            <Tabs items={tabs_list} >
+                <Tab id="stepOne">
+                    <h3>Let’s set up your transaction!</h3>
+                    <h4>Specify the amount to be sent or received.</h4>
+                    <Amount title="YOU SEND" amount={amount} currency={currency}/>
+                    <Amount title="RECEIVER GETS" amount={amount} currency={currency}/>
+                    <div className="next-container">
+                        <button type="button" className="button-next">Next</button>
+                    </div>
+                </Tab>
+            </Tabs>
         );
     }
 }
