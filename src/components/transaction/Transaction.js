@@ -10,27 +10,30 @@ class Transaction extends React.Component {
             {
                 key: 'stepOne',
                 title: 'Transaction Info',
-                subtitle: 'Step 1'
+                subtitle: 'Step 1',
             },
             {
                 key: 'stepTwo',
                 title: 'Recipient info',
-                subtitle: 'Step 2'
+                subtitle: 'Step 2',
+                disabled: true
             },
             {
                 key: 'stepThree',
                 title: 'Make payment',
-                subtitle: 'Step 3'
+                subtitle: 'Step 3',
+                disabled: true
             }
         ];
         return(
             <div className="wrapper">
-                <Tabs items={tabs_list}/>
+                <Tabs items={tabs_list} >
                     <Tab id="stepOne">
                         <h3>Let’s set up your transaction!</h3>
                         <h4>Specify the amount to be sent or received.</h4>
                         <button type="button" className="button-next">Next</button>
                     </Tab>
+                </Tabs>
             </div>
         );
     }
