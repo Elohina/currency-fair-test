@@ -39,7 +39,6 @@ class TransactionDetail extends React.Component {
                         <div className="transaction-details wrapper-flex space-between">
                             <h4>Fee</h4>
                             <p>{new Intl.NumberFormat('en-GB', {
-                                maximumSignificantDigits: 2,
                                 currency: transaction_data.receive.currency.name,
                                 style: 'currency'
                             }).format(transaction_data.fee)}</p>
@@ -55,7 +54,6 @@ class TransactionDetail extends React.Component {
                         <div className="transaction-details wrapper-flex space-between">
                             <h4>Recipient gets</h4>
                             <p className="highlight">{new Intl.NumberFormat('en-GB', {
-                                maximumSignificantDigits: 2,
                                 currency: transaction_data.send.currency.name,
                                 style: 'currency'
                             }).format(transaction_data.receive.amount)}</p>

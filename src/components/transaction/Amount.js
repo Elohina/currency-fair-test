@@ -2,7 +2,6 @@ import React from "react";
 
 class Amount extends React.Component {
 
-
     constructor(props) {
         super(props);
         this.state = { props }

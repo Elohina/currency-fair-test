@@ -42,10 +42,14 @@ class Transaction extends React.Component {
         const send = this.state.transaction_data.send;
         send.amount = value;
         this.setState({send});
+        this.props.onChangeSendInput(value);
     }
 
     onChangeReceiveInput(value) {
-
+        const receive = this.state.transaction_data.receive;
+        receive.amount = value;
+        this.setState({receive});
+        this.props.onChangeReceiveInput(value);
     }
 
     render() {
@@ -77,7 +81,7 @@ class Transaction extends React.Component {
                     <h3>Let’s set up your transaction!</h3>
                     <h4>Specify the amount to be sent or received.</h4>
                     <Amount title="YOU SEND" amount={transaction_data.send.amount} currency={transaction_data.send.currency} onChange={this.onChangeSendInput}/>
-                    <Amount title="RECEIVER GETS" amount={transaction_data.receive.amount} currency={transaction_data.receive.currency} onChange={this.onChangeSendInput}/>
+                    <Amount title="RECEIVER GETS" amount={transaction_data.receive.amount} currency={transaction_data.receive.currency} onChange={this.onChangeReceiveInput}/>
                     <div className="next-container">
                         <button type="button" className="primary"
                                 onClick={this.openVerificationCodeModal}>Next</button>
