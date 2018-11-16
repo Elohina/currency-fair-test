@@ -1,0 +1,13 @@
+.split-digit {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.split-digit:focus {
+    border-color: #64B5F6;
+}
