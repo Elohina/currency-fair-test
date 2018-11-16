@@ -1,8 +1,8 @@
 import React from "react";
 import "./Transaction.css";
-import PADLOCK from "../../assets/padlock.png"
-import CIRCLE_ARROW from "../../assets/circle_arrow.png"
-import PHONE from "../../assets/phone.png"
+import PADLOCK from "../../assets/images/padlock.png"
+import CIRCLE_ARROW from "../../assets/images/circle_arrow.png"
+import PHONE from "../../assets/images/phone.png"
 
 import Tabs from "../common/Tabs/Tabs";
 import Tab from "../common/Tabs/Tab";

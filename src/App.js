@@ -5,7 +5,7 @@ import Transaction from './components/transaction/Transaction';
 import TransactionDetail from "./components/transaction/TransactionDetail";
 
 
-import logo from'./assets/logo.svg';
+import logo from'./assets/images/logo.svg';
 import TRANSACTION_DATA from "./mock_data";
 
 class App extends Component {

@@ -1,5 +1,5 @@
-import EUR_IMG from "./assets/EUR.png";
-import GBP_IMG from "./assets/GBP.png";
+import EUR_IMG from "./assets/images/EUR.png";
+import GBP_IMG from "./assets/images/GBP.png";
 
 const TRANSACTION_DATA = {
     "send": {
