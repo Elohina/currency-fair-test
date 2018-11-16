@@ -15,7 +15,7 @@ class App extends Component {
               <img src={logo} alt="" className="nav-logo"></img>
             </div>
         </Navbar>
-        <div className="wrapper wrapper-flex">
+        <div className="transactions-wrapper wrapper-flex">
               <Transaction />
               <TransactionDetail />
         </div>

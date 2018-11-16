@@ -1,3 +1,12 @@
+.transactions-wrapper {
+    height: 100vh;
+    overflow: auto;
+}
+
+.transaction-container {
+    padding: 0 10px 0 174px;
+}
+
 .amount-container {
     display: flex;
     flex-direction: row;

@@ -18,7 +18,7 @@ class Tabs extends React.Component {
         const list = this.state.tabs_list;
 
         return(
-        <div>
+        <div className="transaction-container">
             <ul>
                 {
                     list.map((element) => {

@@ -5,7 +5,8 @@ function Amount(props) {
         <div className="amount-container">
             <div className="amount">
                 <h4>{props.title}</h4>
-                <input type="text" step="0.1" value={
+                {/* TODO: Add onchange */}
+                <input type="text" step="0.1"  value={
                     new Intl.NumberFormat('en-GB', {
                         style: 'currency',
                         currency: props.currency.name
