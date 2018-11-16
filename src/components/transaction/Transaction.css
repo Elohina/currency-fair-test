@@ -57,10 +57,25 @@
     padding: 0 7px;
 }
 
-.currency h2 {
-    color: #616161;
-}
 
 .next-container {
     padding: 25px 0;
+}
+
+.savings-message {
+    text-align: center;
+}
+
+.savings-message h4 {
+    color: #FFC766;
+}
+
+.transaction-details h4, .transaction-details p {
+    margin: 10px 0;
+    color: #9E9E9E;
+}
+
+.transaction-details p.highlight {
+    color: #616161;
+    font-weight: bold;
 }

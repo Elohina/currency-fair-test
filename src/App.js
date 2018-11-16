@@ -21,7 +21,10 @@ const TRANSACTION_DATA = {
       currency: {
           name: 'GBP', img: GBP_IMG, symbol: '€'
       }
-  }
+  },
+  rate: 0.86022,
+  fee: 2.50,
+  delivery_date: "2018-11-25"
 }
 class App extends Component {
   render() {
