@@ -35,7 +35,7 @@ class Transaction extends React.Component {
     };
 
     getVerificationCode(code) {
-        console.log(code);
+        this.setState({ verification_code: code});
     }
 
     onChangeSendInput(value) {
@@ -83,8 +83,7 @@ class Transaction extends React.Component {
                     <Amount title="YOU SEND" amount={transaction_data.send.amount} currency={transaction_data.send.currency} onChange={this.onChangeSendInput}/>
                     <Amount title="RECEIVER GETS" amount={transaction_data.receive.amount} currency={transaction_data.receive.currency} onChange={this.onChangeReceiveInput}/>
                     <div className="next-container">
-                        <button type="button" className="primary"
-                                onClick={this.openVerificationCodeModal}>Next</button>
+                        <button type="button" className="primary" onClick={this.openVerificationCodeModal}>Next</button>
                     </div>
                 </Tab>
             </Tabs>
