@@ -1,0 +1,76 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* z-index: 1000; */
+    padding: 1.2rem;
+}
+
+.modal {
+    max-width: 600px;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    background: #FFFFFF;
+    margin: auto;
+    background-clip: padding-box;
+}
+
+.modal-header, .modal-footer, .modal-body {
+    padding: 2px 25px;
+    border: 1px solid #E0E0E0;
+}
+
+.modal-body {
+    margin: auto;
+    padding: 10% 16%;
+}
+
+.modal-header, .modal-footer {
+    background-color: #FFFFFF;
+}
+
+.modal-body {
+    background-color: #FAFAFA;
+}
+
+.modal, .modal-header {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal, .modal-footer {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.modal-header .title > span img {
+    /* TODO: Check */
+    margin-right: 16px;
+    vertical-align: bottom;
+}
+
+.modal-header .title {
+    color: #768895;
+}
+
+.modal-header .subtitle {
+    color: #808080;
+}
+
+.modal .modal-body a {
+    padding: 0 15px;
+    font-size: 13px;
+    color: #3C454B;
+}
+
+.modal-body .title {
+    color: #3C454B;
+}
