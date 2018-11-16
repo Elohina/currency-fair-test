@@ -1,6 +1,7 @@
 import React from "react";
 import "./Transaction.css";
 import EUR_IMG from "../../assets/EUR.png";
+import GBP_IMG from "../../assets/GBP.png";
 import PADLOCK from "../../assets/padlock.png"
 import CIRCLE_ARROW from "../../assets/circle_arrow.png"
 import PHONE from "../../assets/phone.png"
@@ -54,8 +55,10 @@ class Transaction extends React.Component {
                 disabled: true
             }
         ];
-        const amount = 2000.00;
-        const currency = {name: 'EUR', img: EUR_IMG};
+        const amount_send = 2000.00;
+        const currency_send = {name: 'EUR', img: EUR_IMG};
+        const receiver_gets = 1717.94;
+        const currency_gets = {name: 'GBP', img: GBP_IMG};
         const {open} = this.state;
         return(
             <div>
@@ -63,8 +66,8 @@ class Transaction extends React.Component {
                 <Tab id="stepOne">
                     <h3>Let’s set up your transaction!</h3>
                     <h4>Specify the amount to be sent or received.</h4>
-                    <Amount title="YOU SEND" amount={amount} currency={currency}/>
-                    <Amount title="RECEIVER GETS" amount={amount} currency={currency}/>
+                    <Amount title="YOU SEND" amount={amount_send} currency={currency_send}/>
+                    <Amount title="RECEIVER GETS" amount={receiver_gets} currency={currency_gets}/>
                     <div className="next-container">
                         <button type="button" className="primary"
                                 onClick={this.openVerificationCodeModal}>Next</button>

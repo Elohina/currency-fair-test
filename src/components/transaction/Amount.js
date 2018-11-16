@@ -14,7 +14,7 @@ function Amount(props) {
             </div>
             <div className="currency">
                 <img src={props.currency.img} alt="" />
-                <h2>{props.currency.name}</h2>
+                <h3>{props.currency.name}</h3>
             </div>
         </div>
     );
