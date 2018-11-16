@@ -13,7 +13,6 @@ describe('<MultiCard>', () => {
                 <CardBody>Test Card</CardBody>
             </Card>
         );
-        console.log(wrapper.debug())
         expect(
             wrapper.containsMatchingElement([
                 <div className="card-container">

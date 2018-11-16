@@ -12,6 +12,9 @@ import Modal from "../common/Modal/Modal";
 import ModalHeader from "../common/Modal/ModalHeader";
 import ModalBody from "../common/Modal/ModalBody";
 import ModalFooter from "../common/Modal/ModalFooter";
+import SplitCode from "../common/SplitCode/SplitCode";
+
+const CODE_DIGITS = 6;
 class Transaction extends React.Component {
 
     constructor(props) {
@@ -27,6 +30,9 @@ class Transaction extends React.Component {
         this.setState({ open: false });
     };
 
+    getVerificationCode(code) {
+        console.log(code);
+    }
 
     render() {
         const tabs_list = [
@@ -75,6 +81,7 @@ class Transaction extends React.Component {
                 </ModalHeader>
                 <ModalBody>
                     <h4 className="title">Enter the code sent via SMS to</h4>
+                    <SplitCode onChangeInput={this.getVerificationCode} digits_number={CODE_DIGITS} />
                     <div className="wrapper-flex space-between">
                         <div>
                             <img src={CIRCLE_ARROW} alt="" />
