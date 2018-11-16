@@ -25,7 +25,7 @@ class Amount extends React.Component {
                 </div>
                 <div className="currency">
                     <img src={currency.img} alt="" />
-                    <h3>{currency.name}</h3>
+                    <h3 className="margin-left-sm">{currency.name}</h3>
                 </div>
             </div>
         );

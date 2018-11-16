@@ -66,13 +66,18 @@ a {
     padding-bottom: 30px;
 }
 
+.padding-top-sm {
+    padding-top: 15px;
+}
+
+.padding-left-sm {
+    padding-left: 15px;
+}
+
 .margin-right-md {
     margin-right: 30px;
 }
 
-.padding-top-sm {
-    padding-top: 15px;
-}
 
 .padding-bottom-sm {
     padding-bottom: 15px;
@@ -82,12 +87,16 @@ a {
     margin-right: 15px;
 }
 
+.margin-left-sm {
+    margin-left: 15px;
+}
+
 h2, h4 {
     color: #616161;
 }
 
 @media screen and (max-width: 600px) {
-    .wrapper-flex {
+    .transactions-wrapper.wrapper-flex {
         display: flex;
         flex-direction: column;
     }

@@ -74,3 +74,10 @@
 .modal-body .title {
     color: #3C454B;
 }
+
+@media screen and (max-width: 600px) {
+    .modal {
+        top: 10%;
+        left: 0;
+    }
+}

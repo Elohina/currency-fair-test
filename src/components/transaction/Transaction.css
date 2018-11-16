@@ -36,11 +36,11 @@
     display: block;
     border: none;
     background-color: transparent;
-    font-size: 28px;
+    font-size: 1.80em;
 }
 
 .amount input.amount-currency {
-    width: 5%;
+    width: 24px;
 }
 
 .currency {
@@ -78,4 +78,10 @@
 .transaction-details p.highlight {
     color: #616161;
     font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .transaction-container {
+        padding: 0;
+    }
 }
