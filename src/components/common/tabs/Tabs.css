@@ -8,10 +8,6 @@ li.active a {
     color: #6EC0E6;
 }
 
-a:visited {
-    color: unset;
-}
-
 .tab-item:after {
     content: '';
     height: 2px;
@@ -41,14 +37,10 @@ ul {
     flex-direction: row;
 }
 
-a {
-    text-decoration: none;
-    padding: 0 46px;
-}
-
 a.tab-link {
     display: block;
     min-width: 160px;
+    padding: 0 46px;
 }
 
 .tab-link[disabled] {

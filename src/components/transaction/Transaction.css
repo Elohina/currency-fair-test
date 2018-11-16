@@ -1,13 +1,3 @@
-.button-next {
-    height: 49px;
-    width: 70px;
-    border-radius: 5px;
-    background-color: #6EC0E6;
-    border-color: #589AB8;
-    color: #FFF;
-    font-size: 14px;
-}
-
 .amount-container {
     display: flex;
     flex-direction: row;
