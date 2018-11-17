@@ -1,0 +1,27 @@
+.footer-container {
+    padding: 20px 50px 0 215px;
+
+}
+
+.separator {
+    margin: 0 50px 0 215px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.help-legal {
+    width: 35%;
+}
+
+.copy-right {
+    width: 65%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container {
+        padding: 0 20px;
+    }
+    .separator {
+        border: none;
+    }
+
+}

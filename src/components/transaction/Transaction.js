@@ -4,14 +4,15 @@ import PADLOCK from "../../assets/images/padlock.png"
 import CIRCLE_ARROW from "../../assets/images/circle_arrow.png"
 import PHONE from "../../assets/images/phone.png"
 
-import Tabs from "../common/Tabs/Tabs";
-import Tab from "../common/Tabs/Tab";
+import Tabs from "../Common/Tabs/Tabs";
+import Tab from "../Common/Tabs/Tab";
 import Amount from "./Amount";
-import Modal from "../common/Modal/Modal";
-import ModalHeader from "../common/Modal/ModalHeader";
-import ModalBody from "../common/Modal/ModalBody";
-import ModalFooter from "../common/Modal/ModalFooter";
-import SplitCode from "../common/SplitCode/SplitCode";
+import Modal from "../Common/Modal/Modal";
+import ModalHeader from "../Common/Modal/ModalHeader";
+import ModalBody from "../Common/Modal/ModalBody";
+import ModalFooter from "../Common/Modal/ModalFooter";
+import SplitCode from "../Common/SplitCode/SplitCode";
+import Footer from "../Footer/Footer";
 
 const CODE_DIGITS = 6;
 class Transaction extends React.Component {
@@ -87,6 +88,7 @@ class Transaction extends React.Component {
                     </div>
                 </Tab>
             </Tabs>
+            <Footer/>
             <Modal open={open} onClose={this.onCloseModal}>
                 <ModalHeader>
                     <h3 className="title">

@@ -1,10 +1,10 @@
 import React from "react";
 import "./TransactionDetail.css";
 
-import Card from "../common/Card/Card";
-import CardHeader from "../common/Card/CardHeader";
-import CardFooter from "../common/Card/CardFooter";
-import CardBody from "../common/Card/CardBody";
+import Card from "../Common/Card/Card";
+import CardHeader from "../Common/Card/CardHeader";
+import CardFooter from "../Common/Card/CardFooter";
+import CardBody from "../Common/Card/CardBody";
 
 class TransactionDetail extends React.Component {
 

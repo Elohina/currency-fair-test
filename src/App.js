@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './components/common/Navbar/Navbar';
-import Transaction from './components/transaction/Transaction';
-import TransactionDetail from "./components/transaction/TransactionDetail";
-
+import Navbar from './components/Common/Navbar/Navbar';
+import Transaction from './components/Transaction/Transaction';
+import TransactionDetail from "./components/Transaction/TransactionDetail";
 
 import logo from'./assets/images/logo.svg';
 import TRANSACTION_DATA from "./mock_data";
