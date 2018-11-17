@@ -6,6 +6,7 @@ import CardHeader from "../Common/Card/CardHeader";
 import CardFooter from "../Common/Card/CardFooter";
 import CardBody from "../Common/Card/CardBody";
 
+import QUESTION_MARK from "../../assets/images/question_mark.png"
 class TransactionDetail extends React.Component {
 
     render() {
@@ -27,7 +28,13 @@ class TransactionDetail extends React.Component {
                         </div>
                     </CardBody>
                     <CardHeader>
-                        <h4>Receiving Details</h4>
+                        <div className="wrapper-flex space-between">
+                            <h4>Receiving Details</h4>
+                            <div className="question wrapper-flex space-between">
+                                <a href="/">As of right now</a>
+                                <img src={QUESTION_MARK} alt="" />
+                            </div>
+                        </div>
                     </CardHeader>
                     <CardBody>
                         <div className="transaction-details wrapper-flex space-between">

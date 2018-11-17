@@ -80,6 +80,15 @@
     font-weight: bold;
 }
 
+.question {
+    padding: 20px 0;
+}
+
+.question > img {
+    height: fit-content;
+    padding: 6px;
+}
+
 @media screen and (max-width: 600px) {
     .transaction-container {
         padding: 0;
