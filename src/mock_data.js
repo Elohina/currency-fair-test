@@ -16,7 +16,13 @@ const TRANSACTION_DATA = {
     },
     "rate": 0.86022,
     "fee": 2.50,
-    "delivery_date": "2018-11-25"
+    "delivery_date": "2018-11-25",
+    "user": {
+        "phone": {
+            "code": "+353",
+            "number": "872251177"
+        }
+    }
 };
 
 export default TRANSACTION_DATA;

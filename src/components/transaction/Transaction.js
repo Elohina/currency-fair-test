@@ -98,7 +98,7 @@ class Transaction extends React.Component {
                     <p className="subtitle">For your security, we ocassionally require you to verify your identity by entering a code sent to your mobile device.</p>
                 </ModalHeader>
                 <ModalBody>
-                    <h4 className="title">Enter the code sent via SMS to</h4>
+                    <h4 className="title">Enter the code sent via SMS to <span className="phone-container">{transaction_data.user.phone.code}</span><span className="phone-container">{transaction_data.user.phone.number}</span></h4>
                     <SplitCode onChangeInput={this.getVerificationCode} digits_number={CODE_DIGITS} />
                     <div className="wrapper-flex space-between">
                         <div>

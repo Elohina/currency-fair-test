@@ -89,6 +89,14 @@
     padding: 6px;
 }
 
+.phone-container {
+    background-color: #E6E6E6;
+    border: 1px solid #9E9E9E;
+    padding: 3px;
+    font-size: 13px;
+    color: #9E9E9E
+}
+
 @media screen and (max-width: 600px) {
     .transaction-container {
         padding: 0;
